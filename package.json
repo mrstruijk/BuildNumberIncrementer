@@ -1,0 +1,22 @@
+{
+  "name": "com.sosxr.buildincrementer",
+  "version": "1.0.0",
+  "displayName": "SemVer and Gradle Build Incrementer",
+  "description": "A simple utility to increment the build number of your Unity project.",
+  "unity": "2021.3",
+  "dependencies": {
+    "com.sosxr.enhancedlogger": "https://github.com/mrstruijk/EnhancedLogger.git#v1.0.2",
+    "com.unity.textmeshpro": "3.0.9"
+  },
+  "keywords": [
+    "Unity",
+    "Build",
+    "Increment",
+    "Version"
+  ],
+  "author": {
+    "name": "Maarten R. Struijk Wilbrink",
+    "email": "sosxr@fsw.leidenuniv.nl",
+    "url": "https://researchwiki.solo.universiteitleiden.nl/xwiki/bin/view/Main/"
+  }
+}
