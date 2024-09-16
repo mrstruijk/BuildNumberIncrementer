@@ -1,7 +1,8 @@
 #if UNITY_EDITOR
 
-using SOSXR.EnhancedLogger;
+
 using UnityEditor;
+using UnityEngine;
 
 
 namespace SOSXR.BuildIncrementer
@@ -23,7 +24,7 @@ namespace SOSXR.BuildIncrementer
 
             PlayerSettings.Android.bundleVersionCode = _newBundleVersionCode;
 
-            Log.Success(nameof(AndroidBundleVersionCode), "Incremented the Android BundleVersionCode from", _oldBundleVersionCode, "to", _newBundleVersionCode);
+            Debug.LogFormat(nameof(AndroidBundleVersionCode), "Incremented the Android BundleVersionCode from", _oldBundleVersionCode, "to", _newBundleVersionCode);
         }
     }
 }

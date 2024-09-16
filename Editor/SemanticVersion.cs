@@ -1,6 +1,6 @@
 #if UNITY_EDITOR
-using SOSXR.EnhancedLogger;
 using UnityEditor;
+using UnityEngine;
 
 
 namespace SOSXR.BuildIncrementer
@@ -24,7 +24,7 @@ namespace SOSXR.BuildIncrementer
 
             PlayerSettings.bundleVersion = _newVersion;
 
-            Log.Success(nameof(SemanticVersion), "Incremented SemVer from", _oldVersion, "to", _newVersion);
+            Debug.LogFormat(nameof(SemanticVersion), "Incremented SemVer from", _oldVersion, "to", _newVersion);
         }
 
 

@@ -1,9 +1,8 @@
 #if UNITY_EDITOR
-
 using System;
 using System.IO;
-using SOSXR.EnhancedLogger;
 using UnityEditor;
+using UnityEngine;
 
 
 namespace SOSXR.BuildIncrementer
@@ -34,7 +33,7 @@ namespace SOSXR.BuildIncrementer
 
             sw.Write("\n"); // New line 
 
-            Log.Info(nameof(UpdatePreBuildInfo), "Appended new build information to build_info.csv at", FilePath);
+            Debug.LogFormat(nameof(UpdatePreBuildInfo) + "Appended new build information to build_info.csv at", FilePath);
         }
 
 
@@ -60,7 +59,7 @@ namespace SOSXR.BuildIncrementer
 
             File.WriteAllLines(FilePath, lines);
 
-            Log.Debug(nameof(UpdatePostBuildInfo), "Updated last build status to Success in build_info.csv at", FilePath);
+            Debug.LogFormat(nameof(UpdatePostBuildInfo) + "Updated last build status to Success in build_info.csv at" + FilePath);
         }
 
 
@@ -75,7 +74,7 @@ namespace SOSXR.BuildIncrementer
 
             sw.WriteLine("BuildDate,BuildTime,DevBuild,SemVer,BundleCode,BuildStatus");
 
-            Log.Info("AutoStoreBuildInfo", "Created new build_info.csv with headers at", FilePath);
+            Debug.LogFormat("AutoStoreBuildInfo" + "Created new build_info.csv with headers at" + FilePath);
         }
     }
 }

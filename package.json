@@ -5,7 +5,6 @@
   "description": "A simple utility to increment the build number of your Unity project.",
   "unity": "2021.3",
   "dependencies": {
-    "com.sosxr.enhancedlogger": "https://github.com/mrstruijk/EnhancedLogger.git#v1.0.2",
     "com.unity.textmeshpro": "3.0.9"
   },
   "keywords": [

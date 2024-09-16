@@ -1,7 +1,8 @@
 #if UNITY_EDITOR
-using SOSXR.EnhancedLogger;
+
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
+using UnityEngine;
 
 
 namespace SOSXR.BuildIncrementer
@@ -18,7 +19,7 @@ namespace SOSXR.BuildIncrementer
             SemanticVersion.Change(true);
             AndroidBundleVersionCode.Change(true);
 
-            Log.Success(nameof(BuildInfoPostProcessor), "Incremented build numbers and logged in .csv");
+            Debug.LogFormat(nameof(BuildInfoPostProcessor), "Incremented build numbers and logged in .csv");
         }
     }
 }

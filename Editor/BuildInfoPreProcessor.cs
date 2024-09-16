@@ -1,7 +1,8 @@
 #if UNITY_EDITOR
-using SOSXR.EnhancedLogger;
+
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
+using UnityEngine;
 
 
 namespace SOSXR.BuildIncrementer
@@ -15,7 +16,7 @@ namespace SOSXR.BuildIncrementer
         {
             WriteBuildInfoFile.UpdatePreBuildInfo();
 
-            Log.Success(nameof(BuildInfoPreProcessor), nameof(WriteBuildInfoFile.UpdatePreBuildInfo));
+            Debug.LogFormat(nameof(BuildInfoPreProcessor), nameof(WriteBuildInfoFile.UpdatePreBuildInfo));
         }
     }
 }

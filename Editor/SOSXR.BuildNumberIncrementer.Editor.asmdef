@@ -1,11 +1,12 @@
 {
-  "name": "SOSXR.BuildIncrementer",
-  "rootNamespace": "SOSXR.BuildIncrementer",
+  "name": "SOSXR.BuildNumberIncrementer.Editor",
+  "rootNamespace": "",
   "references": [
-    "GUID:eb1034696cce04f25a4a7d38d2e0e5a4",
-    "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    "GUID:4e7be806bdd1e4d32bb256841a54b9ae"
   ],
-  "includePlatforms": [],
+  "includePlatforms": [
+    "Editor"
+  ],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
   "overrideReferences": false,
